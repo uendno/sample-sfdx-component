@@ -1,0 +1,8 @@
+<template>
+  <lightning-card title="Contacts" icon-name="custom:custom14">
+    <template for:each={contacts} for:item="contact">
+      <p key={contact.Id}>{contact.Name}</p>
+    </template>
+    <button onclick={handleClick}>Process</button>
+  </lightning-card>
+</template>
